@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-lg: 16px;
+  --radius-md: 8px;
+  --color-primary: #11a052;
+  --color-primary-hover: #0e8644;
+  --color-accent: #f39200;
+  --color-accent-hover: #d97f00;
+
+  /* Dynamically redirect blue palette to a premium red palette for stronger branding */
+  --color-blue-50: #fff1f2;
+  --color-blue-100: #ffe4e6;
+  --color-blue-200: #fecdd3;
+  --color-blue-300: #fda4af;
+  --color-blue-400: #fb7185;
+  --color-blue-500: #f43f5e;
+  --color-blue-600: #e11d48;
+  --color-blue-700: #be123c;
+  --color-blue-800: #9f1239;
+  --color-blue-900: #881337;
+
+  /* Dynamically redirect indigo/purple palette to Petpooja Orange/Gold for highlight contrast */
+  --color-indigo-50: #fffcf0;
+  --color-indigo-100: #fff6d1;
+  --color-indigo-200: #ffe8a3;
+  --color-indigo-300: #ffd366;
+  --color-indigo-400: #ffb733;
+  --color-indigo-500: #f89a1c;
+  --color-indigo-600: #ec6724; /* Secondary Brand Orange */
+  --color-indigo-700: #d04d13;
+  --color-indigo-800: #aa360f;
+  --color-indigo-900: #8c2b0c;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-800 antialiased;
+  }
+}
